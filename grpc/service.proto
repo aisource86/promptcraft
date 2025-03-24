@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service MyService {
+  rpc PushCode (Request4) returns (Response4);
+}
+
+message Request4 {
+  string payload = 1;
+}
+
+message Response4 {
+  string response = 1;
+}
